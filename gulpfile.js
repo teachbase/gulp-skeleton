@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 function config(dir){
   return {
     server: {
-      baseDir: dir
+      baseDir: ['./', dir]
     },
     host: 'localhost',
     port: 4242
