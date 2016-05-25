@@ -46,6 +46,7 @@ gulp.task('serve', ['build'], function() {
 gulp.task('watch', function() {
   gulp.watch('src/**/*.jade', ['html']);
   gulp.watch('src/**/*.css', ['styles']);
+  gulp.watch(['src/**/*.js', 'src/**/*.jsx'], reload);
 });
 
 gulp.task('clean', function(){
